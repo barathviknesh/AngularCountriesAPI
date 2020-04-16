@@ -1,0 +1,16 @@
+<div class="row">
+<div *ngFor = 'let user of users$'>
+  <div  class="card" style="width: 18rem;">
+    <img src="{{user.flag}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{user.name}}</h5>
+      <p class="card-text">captial : {{user.capital}}</p>
+      <p class="card-text">population : {{user.population}}</p>
+     
+    </div>
+  </div>
+</div>
+
+</div>
+
+<router-outlet></router-outlet>
